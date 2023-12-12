@@ -8,8 +8,13 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const questions = [
   {
     type: 'input',
-    name: 'github',
-    message: 'What is your GitHub username?',
+    name: 'title',
+    message: 'What is the name of your project?',
+  },
+  {
+    type: 'input',
+    name: 'description',
+    message: 'Please describe your project',
   },
   {
     type: 'input',
@@ -18,41 +23,31 @@ const questions = [
   },
   {
     type: 'input',
-    name: 'title',
-    message: "What is your project's name?",
-  },
-  {
-    type: 'input',
-    name: 'description',
-    message: 'Please write a short description of your project',
+    name: 'github',
+    message: 'What is your Github username?',
   },
   {
     type: 'list',
     name: 'license',
-    message: 'What kind of license should your project have?',
-    choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
+    message: 'what kind of license should your project have?',
+    choices: ['MIT', 'APACHE_2.0', 'GPL_3.0', 'BSD_3', 'None' ],
+  },
+  {
+    type: 'input',
+    name: 'require',
+    message: 'List any project dependecies',
   },
   {
     type: 'input',
     name: 'installation',
-    message: 'What command should be run to install dependencies?',
+    message: 'What command do you run to install dependecies?',
     default: 'npm i',
   },
   {
     type: 'input',
     name: 'test',
-    message: 'What command should be run to run tests?',
+    message: 'What command is run to run tests?',
     default: 'npm test',
-  },
-  {
-    type: 'input',
-    name: 'usage',
-    message: 'What does the user need to know about using the repo?',
-  },
-  {
-    type: 'input',
-    name: 'contributing',
-    message: 'What does the user need to know about contributing to the repo?',
   },
 ];
 
@@ -60,13 +55,5 @@ const questions = [
 function writeToFile(fileName, data) {
   return fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
-
 // Function to initialize app
-function init() {
-  inquirer.prompt(questions).then((inquirerResponses) => {
-    console.log('Generating README...');
-    writeToFile('README.md', generateMarkdown({ ...inquirerResponses }));
-  });
-}
 
-init();
