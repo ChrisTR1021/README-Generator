@@ -9,7 +9,7 @@ const questions = [
   {
     type: 'input',
     name: 'title',
-    message: 'What is the name of your project?',
+    message: 'What is the title of your project?',
   },
   {
     type: 'input',
@@ -49,6 +49,16 @@ const questions = [
     message: 'What command is run to run tests?',
     default: 'npm test',
   },
+  {
+    type: 'input',
+    name: 'contributing',
+    message: 'What does the user need to know about contributing to the repository?',
+  },
+   { 
+    type: 'input',
+    name: 'usage',
+    message: 'What should the user know about repository?',
+   },
 ];
 
 // Function to write README file using the user input
@@ -56,4 +66,11 @@ function writeToFile(fileName, data) {
   return fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
 // Function to initialize app
-
+function init() {
+  inquirer
+  .prompt(questions)
+  .then((data) => {
+      console.log(data);
+      writeToFile('README.md', generateMarkdown(data));
+  });
+}
