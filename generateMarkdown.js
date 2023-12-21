@@ -5,3 +5,13 @@ function renderLicenseBadge(license) {
     }
     return "";
 }
+
+
+// function to generate markdown README
+function generateMarkdown(data) {
+    return `# ${data.title}
+${renderLicenseBadge(data.license)}
+## Description 
+${data.description}
+## Deployed Application URL
+${data.link}
