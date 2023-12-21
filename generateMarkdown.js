@@ -24,3 +24,23 @@ ${data.link}
 * [Testing] (#testing)
 * [Questions] (#questions)
 
+## Features 
+${data.features}
+## How to use This application:
+${data.usage}
+## Language & Dependencies
+${data.require}
+## Contributors
+${data.contributors}
+## Testing 
+${data.test}
+## Questions 
+
+If you have any questions or issues contact me  at ${
+    data.email
+  }. You can find more of my work at [${data.github}](https://github.com/${
+    data.github
+  }/).
+
+`;
+}
