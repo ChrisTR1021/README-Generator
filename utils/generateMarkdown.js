@@ -8,7 +8,7 @@ function renderLicenseBadge(license) {
 
 
 // function to generate markdown README
-function generator(data) {
+function generateMarkdown(data) {
     return `# ${data.title}
 ${renderLicenseBadge(data.license)}
 ## Description 
@@ -44,3 +44,5 @@ If you have any questions or issues contact me  at ${
 
 `;
 }
+
+module.exports = generateMarkdown;

@@ -2,7 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 const inquirer = require('inquirer');
-const generator = require('./utils/generator');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // Array of questions for user input
 const questions = [
@@ -69,7 +69,7 @@ function writeToFile(fileName, data) {
 function init() {
   inquirer.prompt(questions).then((response) => {
       console.log("Building Professional READMe. md File...")
-      writeToFile('./dist/README.md', generator(response));
+      writeToFile('./dist/README.md', generateMarkdown(response));
   });
 }
 // Function to call initialize app
