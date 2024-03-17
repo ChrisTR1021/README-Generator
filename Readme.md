@@ -4,7 +4,7 @@
 
 This app can be used to create a Professional ReadMe for any project
 
-## Table of Contents##
+## Table of Contents
 
 *Installation
 *Usage
