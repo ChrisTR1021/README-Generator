@@ -6,14 +6,14 @@ This app can be used to create a Professional ReadMe for any project
 
 ## Table of Contents
 
-- Installation
+- [Installation]
 - Usage
 - License 
 - Contributing
 - Test
 - Questions
 
-## Installation
+## (Installation)
 
 Clone the repository down from Github and run command npm i
 
