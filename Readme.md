@@ -8,7 +8,7 @@ This app can be used to create a Professional ReadMe for any project
 
 - [Installation](https://github.com/ChrisTR1021/README-Generator/blob/main/Readme.md#installation)
 - [Usage](https://github.com/ChrisTR1021/README-Generator/blob/main/Readme.md#usage)
-- License 
+- [License](https://github.com/ChrisTR1021/README-Generator/blob/main/Readme.md#license) 
 - Contributing
 - Test
 - Questions
