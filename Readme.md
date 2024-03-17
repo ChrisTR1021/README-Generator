@@ -6,7 +6,7 @@ This app can be used to create a Professional ReadMe for any project
 
 ## Table of Contents
 
-- Installation
+- [Installation]
 - Usage
 - License 
 - Contributing
