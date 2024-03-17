@@ -37,4 +37,4 @@ You can test the application by using it start by running node index,js and foll
 ## Questions
 
 If you have any questoins feel free to email at christianridgell1021@gmail.com 
-Github: ChrisTR1021
+Github: [ChrisTR1021](https://github.com/ChrisTR1021)
