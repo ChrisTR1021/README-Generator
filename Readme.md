@@ -12,3 +12,7 @@ This app can be used to create a Professional ReadMe for any project
 - Contributing
 - Test
 - Questions
+
+## Installtion
+
+Clone the repository down from Github
