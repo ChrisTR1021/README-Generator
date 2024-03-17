@@ -15,7 +15,7 @@ This app can be used to create a Professional ReadMe for any project
 
 ## Installation
 
-Clone the repository down from Github
+Clone the repository down from Github and run command npm i
 
 ## Usage 
 
