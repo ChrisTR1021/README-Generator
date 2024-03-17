@@ -13,6 +13,6 @@ This app can be used to create a Professional ReadMe for any project
 - Test
 - Questions
 
-## Installtion
+## Installation
 
 Clone the repository down from Github
